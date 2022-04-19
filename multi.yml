@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+   - name: multimodule
+     copy: src=/var/log/messages dest=/tmp/
+     file: path=/tmp/file1 state=touch
